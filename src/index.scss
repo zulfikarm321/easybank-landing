@@ -1,0 +1,54 @@
+:root {
+   font-family: 'Public Sans', sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+}
+
+// ### Primary
+
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+
+// ### Neutral
+
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   // border: 1px solid red;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+p {
+   color: $GrayishBlue;
+}
+
+h2 {
+   color: $DarkBlue;
+   font-weight: 400;
+   font-size: 34px;
+}
+
+h3 {
+   color: $DarkBlue;
+   font-weight: 400;
+}
+
+ul,
+li {
+   list-style: none;
+}

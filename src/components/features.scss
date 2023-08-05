@@ -1,0 +1,46 @@
+@import '../index';
+
+.features {
+   padding: 100px 20px;
+   background-color: $LightGrayishBlue;
+
+   @media (max-width: 600px) {
+      text-align: center;
+   }
+
+   .features-header {
+      background-color: transparent;
+      margin-bottom: 50px;
+
+      h2 {
+         margin-bottom: 20px;
+      }
+
+      p {
+         width: 50%;
+
+         @media (max-width: 600px) {
+            width: 100%;
+         }
+      }
+   }
+
+   .features-card-container {
+      background-color: transparent;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+      .features-card {
+         background-color: transparent;
+
+         img {
+            margin-bottom: 20px;
+         }
+
+         h3 {
+            margin-bottom: 15px;
+         }
+      }
+   }
+}

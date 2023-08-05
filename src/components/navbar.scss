@@ -1,0 +1,118 @@
+@import '../index';
+
+// NAVBAR
+
+nav {
+   position: sticky;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 10;
+   background-color: white;
+   width: 100%;
+   height: 75px;
+   display: flex;
+   padding: 0 10px;
+
+   .nav-inner {
+      width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+         display: flex;
+         align-items: center;
+      }
+
+      ul {
+         display: flex;
+         align-items: center;
+         gap: 2vw;
+         list-style: none;
+         color: $GrayishBlue;
+         height: 100%;
+
+         @media (max-width: 760px) {
+            display: none;
+         }
+
+         li {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            &::after {
+               transition: all ease-in-out 0.3s;
+               content: '';
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               width: 0;
+               height: 2px;
+               background-image: linear-gradient(
+                  to right,
+                  $LimeGreen,
+                  $BrightCyan
+               );
+            }
+
+            &:hover::after {
+               width: 100%;
+            }
+
+            a {
+               &:hover {
+                  color: black;
+               }
+            }
+         }
+      }
+
+      .btn-invite {
+         @media (max-width: 760px) {
+            display: none;
+         }
+      }
+
+      .icon-hamburger {
+         display: none;
+
+         @media (max-width: 760px) {
+            display: flex;
+         }
+      }
+
+      .dropdown-links {
+         display: none;
+      }
+
+      .dropdown-links.active {
+         display: none;
+
+         @media (max-width: 760px) {
+            display: flex;
+            position: absolute;
+            top: 75px;
+            left: 0;
+            right: 0;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.233);
+         }
+
+         ul {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            color: $DarkBlue;
+            border-radius: 10px;
+         }
+      }
+   }
+}

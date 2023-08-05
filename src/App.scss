@@ -1,0 +1,23 @@
+@import './index';
+
+// GLOBAL
+.container {
+   max-width: 1280px;
+   margin: 0 auto;
+   background-color: transparent;
+}
+
+.btn-invite {
+   display: inline-block;
+   padding: 15px 30px;
+   border-radius: 20px;
+   border: none;
+   color: white;
+   background-image: linear-gradient(to right, $LimeGreen, $BrightCyan);
+   font-weight: bold;
+   cursor: pointer;
+
+   &:hover {
+      opacity: 0.7;
+   }
+}

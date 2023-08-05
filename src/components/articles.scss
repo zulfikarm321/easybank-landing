@@ -1,0 +1,46 @@
+@import '../index';
+
+.articles {
+   padding: 100px 20px;
+   background-color: $VeryLightGray;
+
+   .articles-card-container {
+      margin-top: 40px;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      background-color: transparent;
+
+      .article-card {
+         cursor: pointer;
+         background-color: $LightGrayishBlue;
+         border-radius: 5px;
+         overflow: hidden;
+         box-shadow: 1px 1px 10px #dbdbdb;
+
+         span {
+            color: $GrayishBlue;
+            font-weight: 100;
+         }
+
+         h4 {
+            margin: 10px 0;
+            font-weight: 400;
+            font-size: 20px;
+            &:hover {
+               color: $LimeGreen;
+               transition: all ease-in-out 0.1s;
+            }
+         }
+
+         img {
+            width: 100%;
+            height: 200px;
+         }
+
+         .article-card-body {
+            padding: 30px 25px 30px;
+         }
+      }
+   }
+}
