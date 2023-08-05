@@ -48,7 +48,7 @@ header {
          position: absolute;
          right: 0;
          top: -180px;
-         background-image: url('bg-intro-desktop.svg');
+         background-image: url('/public/bg-intro-desktop.svg');
          background-size: cover;
          background-repeat: no-repeat;
          overflow: hidden;
@@ -63,7 +63,7 @@ header {
       @media (max-width: 980px) {
          .hero-image {
             position: static;
-            background-image: url('bg-intro-mobile.svg');
+            background-image: url('/public/bg-intro-mobile.svg');
 
             .mockup {
                position: static;
